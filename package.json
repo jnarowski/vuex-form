@@ -1,6 +1,6 @@
 {
   "name": "vuex-form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple Vuex form handler with validation.",
   "main": "dist/vuex-form.js",
   "scripts": {
@@ -57,7 +57,7 @@
     "tern": "^0.20.0",
     "vue": "^2.0.3",
     "vue-loader": "^9.7.0",
-    "vuex": "^2.0.0",
+    "vuex": "3.0.1",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^1.16.2"
   },
