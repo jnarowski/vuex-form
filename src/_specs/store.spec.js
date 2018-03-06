@@ -85,7 +85,7 @@ describe('store', () => {
       id = 1
       formName = 'test'
       errors = []
-      input = { value: 'foo', valid: true, errors, id }
+      input = { value: 'foo', valid: true, errors, id, touched: true }
       state = { forms: { test: { errors } } }
       payload = { formName, input }
     })
@@ -105,6 +105,7 @@ describe('store', () => {
     })
 
     it('CHANGE_INPUT', done => {
+      console.log('eeee');
       // Stub the store
       actions = new Store({
         store: {

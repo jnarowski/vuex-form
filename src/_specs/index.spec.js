@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import VuexForm, { constants } from '../index'
+import { install, constants } from '../index'
 import VuexFormTest from './index.spec.vue'
 
 const { FORM_DATA, CHANGE_INPUT } = constants
@@ -37,7 +37,7 @@ describe('VuexForm', () => {
 
     vm = new Vue({
       store,
-      plugins: [VuexForm.install(Vue, {store})],
+      plugins: [install(Vue, {store})],
       template: '<div><VuexFormTest /></div>',
       components: { VuexFormTest }
     })
